@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+
+
+      justify-content: center;
+      align-content: center;
+    }
+
+    #hand {
+      position: absolute;
+      bottom: 0;
+
+      /*border: 1px solid red;*/
+      display: flex;
+      flex-direction: row;
+
+      justify-content: center;
+      align-content: center;
+
+    }
+
+    #hand .card {
+      position: relative;
+      width: 46px;
+      height: 74px;
+      margin: 1px;
+    }
+
+    #tabuleiro {
+      width: 300px;
+
+      padding: 5px;
+      display: flex;
+
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      justify-content: center;
+      align-content: center;
+
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .tile {
+      position: relative;
+
+      font-size: 10px;
+
+      color: #00000045;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 36px;
+      height: 56px;
+      box-sizing: border-box;
+
+      margin: 1px;
+      padding: 0;
+    }
+
+    .on {
+      /*background-color: green;*/
+      border: 1px solid seagreen;
+
+      border-radius: 4px;
+    }
+
+    .off {
+      /*background-color: red;*/
+      border: 1px solid #ff000013;
+
+      border-radius: 3px 3px 3px 3px;
+    }
+
+    .card {
+      position: absolute;
+      /*width: 108px;
+      height: 168px;*/
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+
+      margin: auto;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #23cd43;
+      /* box-shadow: 0px 0px 5px 2px #00000056;*/
+
+      box-sizing: border-box;
+
+      font-size: 4.2em;
+      color: #fff;
+    }
+
+    /*
+    .card::before{
+      position: absolute;
+      bottom: -4px;
+      content: '';
+      background: #23cd43;
+      width: 3px;
+      height: 8px;
+      z-index: -1;
+    }
+*/
+    .card img {
+      width: 100%;
+      aspect-ratio: 1;
+    }
+
+    .card-inboard {
+      position: absolute;
+      /*width: 108px;
+      height: 168px;*/
+      width: 105%;
+      height: 105%;
+      border-radius: 4px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin: auto;
+      padding: 0;
+
+      background-color: #23cd43;
+    }
+
+    .card-inboard img {
+      width: 100%;
+      aspect-ratio: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="tabuleiro"></div>
+
+  <div id="hand"></div>
+
+  <script src="game.js"></script>
+
+</body>
+
+</html>

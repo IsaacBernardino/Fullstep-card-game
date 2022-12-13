@@ -1,0 +1,20 @@
+# Criar um tabuleiro [OK] 28/11/2022
+  tabuleiro 4 espacos disponíveis inicialmente [OK]
+      #
+    # # #
+    
+        [DESCARTADO] o tabuleiro gera espacos conforme as cartas vao para os lugares
+        
+    Tabuleiro 7x8 predefinido 
+    
+• Re-fatorar ↑ [OK] 03/12/2022
+
+• resolver bug de verificação de tile em row não existente
+  
+  
+## criar um gerador de cards [OK] 04/12/2022
+
+### Criar o baralho de cartas [OK] 06/12/2022
+  53 cartas
+  
+# liberar os espaços que as cartas inicias indicam 
